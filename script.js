@@ -20,13 +20,12 @@ $(document).ready(function(){
 if($('.brands_slider').length)
 {
 var brandsSlider = $('.brands_slider');
-
 brandsSlider.owlCarousel(
 {
 loop:true,
 autoplay:true,
 autoplayTimeout:5000,
-nav:false,
+nav:true,
 dots:false,
 autoWidth:true,
 items:8,
