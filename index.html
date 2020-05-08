@@ -1,50 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-      <!--owl-carousel-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
-      <!--font-awesome-->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      
-      <!--Animation-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
-
-<!--Roboto Font-->
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-      <link rel="stylesheet" href="styles.css">
-
     <title>Buisiness Website</title>
-  </head>
-    
-    
-  <body>
-      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--owl-carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+
+    <!--Roboto Font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
 <!-- Navigation -->
 <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Fulgid</a>
-            <button type="button" data-toggle="collapse" data-target="#menu-content" aria-expanded="false" aria-controls="navbar" class="collapsed navbar-toggle hamburgurMenu" onclick="myFunction(this)">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="bar1"></span>
-              <span class="bar2"></span>
-              <span class="bar3"></span>
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="./images/logo.png" class="logo" alt="fulgid"></a>
+            <button type="button" data-toggle="collapse" data-target="#menu-content" aria-expanded="false"
+                    aria-controls="navbar" class="collapsed navbar-toggle hamburgurMenu" onclick="myFunction(this)">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
             </button>
-            
+
             <div id="menu-content" class="collapse navbar-collapse">
                 <a href="toTop"></a>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="#home" class="nav-link text-uppercase">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a href="#home" class="nav-link text-uppercase">Home <span
+                            class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a href="#about" class="nav-link text-uppercase">About Us</a></li>
                     <li class="nav-item"><a href="#services" class="nav-link text-uppercase ">Services</a></li>
                     <li class="nav-item"><a href="#blog" class="nav-link text-uppercase">Blog</a></li>
@@ -56,363 +60,478 @@
 </header>
 
 <header id="home">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url(./images/photo-of-woman-wearing-eyeglasses-3184405.jpg); background-size: cover">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">First Slide</h2>
-          
+    <div class="slider">
+        <div class="slider__slide slider__slide--active" data-slide="1">
+            <div class="slider__wrap">
+                <div class="slider__back"></div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__content">
+                    <h1>We're here to level   <br> up your online  presence.</h1><a class="go-to-next">next</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080'); background-size: cover">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Second Slide</h2>
+        <div class="slider__slide" data-slide="2">
+            <div class="slider__wrap">
+                <div class="slider__back"></div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__content">
+                    <h1>We're here to level   <br> up your online  presence.</h1><a class="go-to-next">next</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080'); background-size: cover">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
+        <div class="slider__slide" data-slide="3">
+            <div class="slider__wrap">
+                <div class="slider__back"></div>
+            </div>
+            <div class="slider__inner">
+                <div class="slider__content">
+                    <h1>We're here to level   <br> up your online  presence.</h1><a class="go-to-next">next</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="slider__indicators"></div>
+    </div><a class="sig" href="https://fulgid.in" target="_blank">fulgid</a>
+<!--    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
+<!--        <ol class="carousel-indicators">-->
+<!--            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+<!--            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+<!--            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+<!--        </ol>-->
+<!--        <div class="carousel-inner" role="listbox">-->
+<!--            &lt;!&ndash; Slide One - Set the background image for this slide in the line below &ndash;&gt;-->
+<!--            <div class="carousel-item active"-->
+<!--                 style="background-image: url(./images/photo-of-woman-wearing-eyeglasses-3184405.jpg); background-size: cover">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                    <h2 class="display-4">First Slide</h2>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Slide Two - Set the background image for this slide in the line below &ndash;&gt;-->
+<!--            <div class="carousel-item"-->
+<!--                 style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080'); background-size: cover">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                    <h2 class="display-4">Second Slide</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Slide Three - Set the background image for this slide in the line below &ndash;&gt;-->
+<!--            <div class="carousel-item"-->
+<!--                 style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080'); background-size: cover">-->
+<!--                <div class="carousel-caption d-none d-md-block">-->
+<!--                    <h2 class="display-4">Third Slide</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </header>
 
 
 <section class="container about mt-5 pt-5" id="about">
     <div class="row">
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 image-section">
-    <img src="images/group-of-person-sitting-indoors-3184306.jpg" class="w-100 h-auto"/>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 image-section" data-aos="fade-up">
+            <img src="images/group-of-person-sitting-indoors-3184306.jpg" class="w-100 h-auto"/>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutDesc m-auto p-20" data-aos="fade-left">
+            <h2 class="aboout-heaading voilet pb-10">A agency specialized in brand strategy and digital creation.</h2>
+            <p class="greyColor aboutDesc">We combine classic brand strategy and account planning to find a brand’s true
+                capability. Then we turn this capability into exceptional content, products, services and campaigns.</p>
+        </div>
     </div>
-    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutDesc m-auto">
-    <h2 class="aboout-heaading voilet">A agency specialized in brand strategy and digital creation.</h2>
-    <p class="greyColor aboutDesc">We combine classic brand strategy and account planning to find a brand’s true capability. Then we turn this capability into exceptional content, products, services and campaigns.</p>
-    </div>
-    </div> 
 </section>
-      
-      
+
+
 <section class="services mt-5 pt-5 pb-5" id="services">
     <div class="container text-center">
-    <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover py-4">
-        <img src="images/tool.png" class="w-25 h-auto"/> 
-        <h4 class="greyColor mt-3">Digital Solutions</h4>
-        <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving technologies.</p>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover py-4">
-        <img src="images/web-design.png" class="w-25 h-auto"/> 
-        <h4 class="greyColor mt-3">Content</h4>
-         <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving technologies.</p>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover py-4">
-        <img src="images/seo-and-web.png" class="w-25 h-auto"/>
-        <h4 class="greyColor mt-3">Research</h4>
-         <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving technologies.</p>
-    </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
+                <img src="images/tool.png" class="w-15 h-auto"/>
+                <h4 class="greyColor heading mt-3">Digital Solutions</h4>
+                <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving
+                    technologies.</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
+                <img src="images/web-design.png" class="w-15 h-auto"/>
+                <h4 class="greyColor heading mt-3">Content</h4>
+                <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving
+                    technologies.</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
+                <img src="images/seo-and-web.png" class="w-15 h-auto"/>
+                <h4 class="greyColor heading mt-3">Research</h4>
+                <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving
+                    technologies.</p>
+            </div>
         </div>
         <div class="row">
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover py-4">
-        <img src="images/layout.png" class="w-25 h-auto"/>
-        <h4 class="greyColor mt-3">Development</h4>
-         <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving technologies.</p><p class="greyColor"></p>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover py-4">
-        <img src="images/interface.png" class="w-25 h-auto"/>
-        <h4 class="greyColor mt-3">Communications</h4>
-         <p class="greyColor mx-5">Find success in the digital world, where clients love evolving technologies.</p>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover py-4">
-        <img src="images/business-and-finance.png" class="w-25 h-auto"/> 
-        <h4 class="greyColor mt-3">Strategy</h4>
-         <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving technologies.</p>
-    </div>
-    </div> 
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
+                <img src="images/layout.png" class="w-15 h-auto"/>
+                <h4 class="greyColor heading mt-3">Development</h4>
+                <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving
+                    technologies.</p>
+                <p class="greyColor"></p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
+                <img src="images/interface.png" class="w-15 h-auto"/>
+                <h4 class="greyColor mt-3">Communications</h4>
+                <p class="greyColor mx-5">Find success in the digital world, where clients love evolving
+                    technologies.</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
+                <img src="images/business-and-finance.png" class="w-15 h-auto"/>
+                <h4 class="greyColor mt-3">Strategy</h4>
+                <p class="greyColor mx-5 mb-0">Find success in the digital world, where clients love evolving
+                    technologies.</p>
+            </div>
+        </div>
     </div>
 </section>
-      
-      <section class=" blog mt-5 pt-5" id="blog">
-        <h5 class="voilet text-center">RANDOM STUFF</h5>
-          <h2 class="text-center">From our blog</h2>
-          <div class="container d-flex mt-5 ">
-          <div class="row card-group justify-content-center mx-auto animation-element bounce-up" >
-          <div class="card card-color col-md-4 mx-2" style="width: 18rem;">
-  <div class="card-body">
-    <h6 class="voilet onHoverYellow">BUSINESS</h6>
-                  <h4 class="darkGrey mt-4 onHoverWhite">Weekend trip</h4>
-                  <p class="date lightFont onHoverlight">March 10, 2019</p>
-                  <p class="blogDesc lightFont my-4 onHoverlight">Treat yourself to a night re-living the golden age of the railway with a stay at The Old Railway Station in Petworth, West Sussex.</p>
-                  <a class="lightGrey onHoverYellow" href="">READ MORE...</a>
-  </div>
-</div> 
-              
-              <div class="card card-color col-md-4 mx-2" style="width:18rem;">
-  <div class="card-body">
-    <h6 class="voilet onHoverYellow">LIFE STYLE</h6>
-                   <h4 class="darkGrey onHoverWhite mt-4">Become Who You Say You Always Will</h4>
-                  <p class="date lightFont onHoverlight">March 10, 2019</p>
-                   <p class="blogDesc lightFont my-4 onHoverlight">If I have a chance to whisper the best advice to a baby and he’ll remember it for the rest of his life is this: ENJOY YOUR LIFE. Nothing</p>
-                   <a class="lightGrey onHoverYellow" href="">READ MORE...</a>
-  </div>
-</div>
-              <div class="card card-color col-md-4 mx-2" style="width: 18rem;">
-  <div class="card-body">
-     <h6 class="voilet onHoverYellow">TRAVEL</h6>
-                   <h4 class="darkGrey onHoverWhite mt-4">Explore Vancouver Mountain</h4>
-                  <p class="date lightFont onHoverlight">March 10, 2019</p>
-                   <p class="blogDesc lightFont my-4 onHoverlight">Treat yourself to a night re-living the golden age of the railway with a stay at The Old Railway Station in Petworth, West Sussex.</p>
-                   <a class="lightGrey onHoverYellow" href="">READ MORE...</a>
-  </div>
-</div>
-              </div>
-          </div>
-      </section>
-      
-      <section class="question darkVoilet mt-5 pb-5 pt-5">
-          
-          <div class="container">
-          <div class="row">
+
+<section class=" blog mt-5 pt-5" id="blog">
+    <h5 class="voilet text-center">RANDOM STUFF</h5>
+    <h2 class="text-center">From our blog</h2>
+    <div class="col-md-12 d-flex mt-5 pb-10 ">
+        <div class="row card-group justify-content-center mx-auto animation-element bounce-up">
+            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+                <div class=""><img class="card-img-top" src="./images/blog/1.jpg" alt="Card image cap"></div>
+                <div class="card-body">
+                    <h6 class="voilet onHoverYellow">BUSINESS</h6>
+                    <h4 class="darkGrey mt-4 onHoverWhite">Weekend trip</h4>
+                    <p class="date lightFont onHoverlight">March 10, 2019</p>
+                    <p class="blogDesc lightFont my-4 onHoverlight">Treat yourself to a night re-living the golden age
+                        of the railway with a stay at The Old Railway Station in Petworth, West Sussex.</p>
+                    <div class="b-link"><a href="#" class="cta">
+                        <span>Read More</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+                <div class=""><img class="card-img-top" src="./images/blog/2.jpg" alt="Card image cap"></div>
+                <div class="card-body">
+                    <h6 class="voilet onHoverYellow">LIFE STYLE</h6>
+                    <h4 class="darkGrey onHoverWhite mt-4">Become Who You Say You Always Will</h4>
+                    <p class="date lightFont onHoverlight">March 10, 2019</p>
+                    <p class="blogDesc lightFont my-4 onHoverlight">If I have a chance to whisper the best advice to a
+                        baby and he’ll remember it for the rest of his life is this: ENJOY YOUR LIFE. Nothing</p>
+                    <div class="b-link"><a href="#" class="cta">
+                        <span>Read More</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+                <div class=""><img class="card-img-top" src="./images/blog/3.jpg" alt="Card image cap"></div>
+                <div class="card-body">
+                    <h6 class="voilet onHoverYellow">TRAVEL</h6>
+                    <h4 class="darkGrey onHoverWhite mt-4">Explore Vancouver Mountain</h4>
+                    <p class="date lightFont onHoverlight">March 10, 2019</p>
+                    <p class="blogDesc lightFont my-4 onHoverlight">Treat yourself to a night re-living the golden age
+                        of the railway with a stay at The Old Railway Station in Petworth, West Sussex.</p>
+                    <div class="b-link"><a href="#" class="cta">
+                        <span>Read More</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+                <div class=""><img class="card-img-top" src="./images/blog/4.jpg" alt="Card image cap"></div>
+                <div class="card-body">
+                    <h6 class="voilet onHoverYellow">LIFE STYLE</h6>
+                    <h4 class="darkGrey onHoverWhite mt-4">Become Who You Say You Always Will</h4>
+                    <p class="date lightFont onHoverlight">March 10, 2019</p>
+                    <p class="blogDesc lightFont my-4 onHoverlight">If I have a chance to whisper the best advice to a
+                        baby and he’ll remember it for the rest of his life is this: ENJOY YOUR LIFE. Nothing</p>
+                    <div class="b-link"><a href="#" class="cta">
+                        <span>Read More</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="text-center">
+        <a href="#" class="btn btn-theme ">Load more..</a>
+    </div>
+</section>
+
+<section class="question darkVoilet mt-5 pb-10 pt-10">
+
+    <div class="container">
+        <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <h2 class="yellowDark mt-2">Start a new project?</h2>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 emailHere">            
-                  <input type="email" id="emails" name="emails" multiple class="m-auto" placeholder="Email here..." >
-              </div>
-          </div>
-          </div>
-      </section>
-      
-      <section class="container portfolio mt-5" id="portfolio">
-          <h6 class="voilet text-center"> RECENT WORKS</h6>
-          <h2 class="text-center">Our Portfolios</h2>
-      
-          <div class="masonry mt-5">
-  <div class="item">
-    
-    <img src="images/01.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/02%20(1).jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/03.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/04.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/05.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/06.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
+                <h2 class="yellowDark mt-2 text-uppercase">Start a new project?</h2>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 emailHere">
+                <input type="email" id="emails" name="emails" multiple class="m-auto" placeholder="Email here...">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <img src="images/07.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/08.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/09.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/11.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-  <div class="item">
-    
-    <img src="images/12.jpg" class="image">
-      <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-    <div class="item">
-    
-    <img src="images/12.jpg" class="image">
-        <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-   <div class="item">
-    
-    <img src="images/12.jpg" class="image">
-        <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
-   <div class="item">
-    
-    <img src="images/12.jpg" class="image">
-        <div class="overlay text-center">
-        <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-          <p class="text-white">Illustrator</p>
-  </div>
-  </div>
+<section class="container portfolio mt-5 pt-5" data-aos="flip-up" id="portfolio">
+    <h6 class="voilet text-center"> RECENT WORKS</h6>
+    <h2 class="text-center">Our Portfolios</h2>
 
-          </div>
-          
-      </section>
-      
-      <section class="query mt-5 pt-5" id="contact">
-      
-      <div class="container">
-          <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 form-content mt-5 pt-5 mb-5 px-5">
-          <h5 class="voilet">unique digital experiences</h5>
-              <h2 class="mt-3">Fill out the form and we’ll be in <i class="voilet">touch soon!</i></h2>
-              
-              <p class="lightFont mt-5 mb-5">Pri id perfecto reformidans ullam corper, nobis bonorum appetere ex usut per doming pros</p>
-              
-              <div class="social-media">
-              
-              <img src="images/behance.png" class="" width="44" height="44">
-              <img src="images/facebook.png"  width="44" height="44">
-                <img src="images/instagram.png"  width="44" height="44">
-                  <img src="images/linkedin.png"  width="44" height="44">
-                  <img src="images/twitter.png"  width="44" height="44">    
-              </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-5 pt-5 input-form px-4 mb-5 pb-5">
-              <h6 class="voilet mb-3">General</h6>
-              <form class="form-horizontal" action="">
-              <div class="form-group">
-           <input type="text" class="form-control" id="usr" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-              <input type="text" class="form-control" id="usr" placeholder="About Yourself">
-              </div>
-                  <div class="form-group">
-                       <label for="comment" class="voilet font-weight-bold">Additional Info:</label>
-                    <textarea class="form-control" rows="5" id="comment" placeholder="About Yourself"></textarea>
-</div>
-                  <button type="button" class="btn w-100 bg-voilet ">Send</button>
-              </form>    
-          </div>
-          </div> 
-          </div>
-      
-      </section>
-      
-      <section class="partners mt-5">
-          <div class="container mb-5">
-  <div class="owl-carousel">
-    <div class="brand mx-3 px-2"><img src="images/brand_01.png"></div>
-    <div class="brand mx-3 px-2"><img src="images/brand_02.png"></div>
-    <div class="brand mx-3 mt-4 px-2"><img src="images/brand_03.png"></div>
-    <div class="brand mx-3 px-2"><img src="images/brand_04.png"></div>
-    <div class="brand mx-3 px-2"><img src="images/brand_05.png"></div>
-    <div class="brand mx-3 px-2"><img src="images/brand_06.png"></div>
-    <div class="brand mx-3 px-2"><img src="images/brand_02.png"></div>
-    <div class="brand mx-3 px-2"><img src="images/brand_03.png"></div>
-  </div>
-</div>
-          
-          
-          
+    <div class="masonry mt-5">
+        <div class="item">
 
-      </section>
+            <img src="images/01.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/02%20(1).jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/03.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/04.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/05.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/06.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/07.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/08.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/09.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/11.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/12.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/12.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/12.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+        <div class="item">
+
+            <img src="images/12.jpg" class="image">
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
+                <p class="text-white">Illustrator</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="query mt-5 pt-5 mb-10 pb-10" id="contact">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 form-content mt-5 pt-5 mb-5 px-5">
+                <h5 class="voilet">unique digital experiences</h5>
+                <h2 class="mt-3 head-v">Fill out the form and we’ll be in <i class="voilet">touch soon!</i></h2>
+                <p class="lightFont mt-5 mb-5">Pri id perfecto reformidans ullam corper, nobis bonorum appetere ex usut per doming pros</p>
+                <!--                <div class="social-media">-->
+                <!--                   <a href="#" class="social-icon"> <img src="images/behance.png" class="" width="34" height="34"></a>-->
+                <!--                    <a href="#" class="social-icon">  <img src="images/facebook.png" width="34" height="34"></a>-->
+                <!--                        <a href="#" class="social-icon"> <img src="images/instagram.png" width="34" height="34"></a>-->
+                <!--                            <a href="#" class="social-icon">  <img src="images/linkedin.png" width="34" height="34"></a>-->
+                <!--                                <a href="#" class="social-icon"> <img src="images/twitter.png" width="34" height="34"></a>-->
+                <!--                </div>-->
+                <div class="icon-so social-media">
+                    <ul class="icon-effect icon-effect-1a">
+                        <li><a href="#" class="icon"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" class="icon"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-5 pt-5 input-form px-4 mb-5 pb-5"
+                 data-aos="fade-left">
+                <h6 class="voilet mb-3">General:</h6>
+                <form class="form-horizontal" action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr_self" placeholder="About Yourself">
+                    </div>
+                    <div class="form-group">
+                        <!--                        <label for="comment" class="voilet font-weight-bold">Additional Info:</label>-->
+                        <h6 class="voilet mb-3">Additional Info:</h6>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="About Yourself"></textarea>
+                    </div>
+                    <a aria-label='Thanks' class='h-button centered w-100' data-text='Send' href='#'>
+                        <span>T</span>
+                        <span>h</span>
+                        <span>a</span>
+                        <span>n</span>
+                        <span>k</span>
+                        <span>s</span>
+                    </a>
+<!--                    <button type="button" class="btn w-100 bg-voilet ">Send</button>-->
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="partners mt-5">
+    <div class="container mb-5">
+        <div class="owl-carousel">
+            <div class="brand "><img src="images/brand_01.png"></div>
+            <div class="brand"><img src="images/brand_02.png"></div>
+            <div class="brand "><img src="images/brand_03.png"></div>
+            <div class="brand "><img src="images/brand_04.png"></div>
+            <div class="brand "><img src="images/brand_05.png"></div>
+            <div class="brand "><img src="images/brand_06.png"></div>
+            <div class="brand "><img src="images/brand_02.png"></div>
+            <div class="brand "><img src="images/brand_03.png"></div>
+        </div>
+    </div>
+
+
+</section>
 <!-- Page Content -->
 
 <footer>
-      <div class="container pt-4 pb-4 ">
-    <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-            
-              <div id="footer-menu-content" class="">
-                <ul class="d-flex list-inline my-auto">
+    <div class="container pt-4 pb-4 ">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
 
-                    <li class="nav-item"><a href="#blog" class="nav-link text-uppercase lightFont">Blog</a></li><li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase lightFont">Latest Projects</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-uppercase lightFont">Contact Me</a></li>
-                </ul>
+                <div id="footer-menu-content" class="">
+                    <ul class="d-flex list-inline my-auto">
+
+                        <li class="nav-item"><a href="#blog" class="nav-link text-uppercase lightFont">Blog</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase lightFont">Latest
+                            Projects</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-uppercase lightFont">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-              
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
+                <p class="lightFont align-self-center text-center mx-auto my-auto"> &copy; Akon Studio 2020. Made with
+                    ♥ by fulgid</p>
+            </div>
+            <!--        <div class="to-top" id="toTop">-->
+            <button id="myBtn" class="myBtn" title="Go to top"></button>
+            <!--          </div>-->
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-            <p class="lightFont align-self-center text-center mx-auto my-auto"> &copy; Arden Studio 2020. Made with ♥ by fulgid</p>
-        </div>
-        <div class="to-top" id="toTop">
-          <i class="arrow up mx-auto"></i>
-          </div>
-          </div>
-    
+
     </div>
-      </footer>
+</footer>
 
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-    <script src="script.js"></script>
-
-    
-  </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script></script>
+<script src="script.js"></script>
+</body>
 </html>
