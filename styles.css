@@ -16,7 +16,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: "Poppins", sans-serif;
     color: #333333;
-    font-weight: 400; }
+    font-weight: 400;
+    overflow-x: hidden;}
 html,
 button,
 input,
