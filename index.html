@@ -3,17 +3,15 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buisiness Website</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!--owl-carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--font-awesome-->
@@ -24,14 +22,18 @@
 
     <!--Roboto Font-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<!-- Animator CSS -->
+    <link  rel="stylesheet"  href="./css/animate.css"    />
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <link rel="stylesheet" href="styles.css">
-
+    <style>
+        .modal-content iframe{
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
 </head>
-
-
 <body>
-
 <!-- Navigation -->
 <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top py-3">
@@ -92,7 +94,8 @@
             </div>
         </div>
         <div class="slider__indicators"></div>
-    </div><a class="sig" href="https://fulgid.in" target="_blank">fulgid</a>
+    </div>
+<!--    </div><a class="sig" href="https://fulgid.in" target="_blank">fulgid</a>-->
 <!--    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
 <!--        <ol class="carousel-indicators">-->
 <!--            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
@@ -130,10 +133,16 @@
 <section class="container about mt-5 pt-5" id="about">
     <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 image-section" data-aos="fade-up">
-            <img src="images/group-of-person-sitting-indoors-3184306.jpg" class="w-100 h-auto"/>
+            <div class="videos">
+                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal" id="url" class="video video-btn">
+                    <span></span>
+                    <img src="./images/group-of-person-sitting-indoors-3184306.jpg" class="w-100 h-auto" alt="My Awesome Video" />
+                </a>
+            </div>
+
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutDesc m-auto p-20" data-aos="fade-left">
-            <h2 class="aboout-heaading voilet pb-10">A agency specialized in brand strategy and digital creation.</h2>
+            <h2 class="aboout-heaading voilet pb-10">A agency specialized in <span class="about-span">brand strategy</span> and digital creation.</h2>
             <p class="greyColor aboutDesc">We combine classic brand strategy and account planning to find a brand’s true
                 capability. Then we turn this capability into exceptional content, products, services and campaigns.</p>
         </div>
@@ -267,20 +276,22 @@
         </div>
 
     </div>
-    <div class="text-center">
-        <a href="#" class="btn btn-theme ">Load more..</a>
-    </div>
+<!--    <div class="text-center">-->
+<!--        <a href="#" class="btn btn-theme ">Load more..</a>-->
+<!--    </div>-->
 </section>
 
 <section class="question darkVoilet mt-5 pb-10 pt-10">
 
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h2 class="yellowDark mt-2 text-uppercase">Start a new project?</h2>
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <h2 class="yellowDark mt-2 ">Let’s create something extraordinary together.
+                </h2>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 emailHere">
-                <input type="email" id="emails" name="emails" multiple class="m-auto" placeholder="Email here...">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 emailHere">
+<!--                <input type="email" id="emails" name="emails" multiple class="m-auto" placeholder="Email here...">-->
+                <a href="#" class="btn btn-theme ">Join Us Now</a>
             </div>
         </div>
     </div>
@@ -436,31 +447,39 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-5 pt-5 input-form px-4 mb-5 pb-5"
                  data-aos="fade-left">
                 <h6 class="voilet mb-3">General:</h6>
-                <form class="form-horizontal" action="">
+                <form class="form-horizontal"  role="form" id="contactForm">
+
                     <div class="form-group">
-                        <input type="text" class="form-control" id="usr" placeholder="Your Name">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required data-error="Please check the field" />
+                        <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="usr_self" placeholder="About Yourself">
+                        <input type="text" class="form-control" id="phone" placeholder="Your Phone" required>
+                        <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
                         <!--                        <label for="comment" class="voilet font-weight-bold">Additional Info:</label>-->
                         <h6 class="voilet mb-3">Additional Info:</h6>
-                        <textarea class="form-control" rows="5" id="comment" placeholder="About Yourself"></textarea>
+                        <textarea class="form-control" rows="5" id="message" placeholder="Description" required></textarea>
+                        <div class="help-block with-errors"></div>
                     </div>
-                    <a aria-label='Thanks' class='h-button centered w-100' data-text='Send' href='#'>
+                    <button type="submit" id="form-submit" aria-label='Thanks' class='h-button centered w-100' data-text='Send' >
                         <span>T</span>
                         <span>h</span>
                         <span>a</span>
                         <span>n</span>
                         <span>k</span>
                         <span>s</span>
-                    </a>
+                    </button>
+
 <!--                    <button type="button" class="btn w-100 bg-voilet ">Send</button>-->
                 </form>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
@@ -468,31 +487,49 @@
 </section>
 
 <section class="partners mt-5">
-    <div class="container mb-5">
+    <div class="mb-5">
         <div class="owl-carousel">
-            <div class="brand "><img src="images/brand_01.png"></div>
+            <div class="brand"><img src="images/brand_01.png"></div>
             <div class="brand"><img src="images/brand_02.png"></div>
-            <div class="brand "><img src="images/brand_03.png"></div>
-            <div class="brand "><img src="images/brand_04.png"></div>
-            <div class="brand "><img src="images/brand_05.png"></div>
-            <div class="brand "><img src="images/brand_06.png"></div>
-            <div class="brand "><img src="images/brand_02.png"></div>
-            <div class="brand "><img src="images/brand_03.png"></div>
+            <div class="brand"><img src="images/brand_03.png"></div>
+            <div class="brand"><img src="images/brand_04.png"></div>
+            <div class="brand"><img src="images/brand_05.png"></div>
+            <div class="brand"><img src="images/brand_06.png"></div>
+            <div class="brand"><img src="images/brand_02.png"></div>
+            <div class="brand"><img src="images/brand_03.png"></div>
+            <div class="brand"><img src="images/brand_02.png"></div>
+            <div class="brand"><img src="images/brand_03.png"></div>
+
+
         </div>
     </div>
 
 
 </section>
 <!-- Page Content -->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-body" >-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--               -->
+<!--                <div class="embed-responsive embed-responsive-16by9" id="yt-player">-->
+<!--                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GyxkMvb3PXQ?rel=0&enablejsapi=1" allowfullscreen="" allow="autoplay"></iframe>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 
 <footer>
     <div class="container pt-4 pb-4 ">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-
                 <div id="footer-menu-content" class="">
-                    <ul class="d-flex list-inline my-auto">
-
+                    <ul class="d-flex list-inline my-auto justify-content-center">
                         <li class="nav-item"><a href="#blog" class="nav-link text-uppercase lightFont">Blog</a></li>
                         <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase lightFont">Latest
                             Projects</a></li>
@@ -507,7 +544,7 @@
                     ♥ by fulgid</p>
             </div>
             <!--        <div class="to-top" id="toTop">-->
-            <button id="myBtn" class="myBtn" title="Go to top"></button>
+            <button id="myBtn" class="myBtn d-sm-none d-md-block" title="Go to top"></button>
             <!--          </div>-->
         </div>
 
@@ -516,22 +553,40 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="./js/validator.min.js"></script>
+<script type="text/javascript" src="./js/form-scripts.js"></script>
+<script src="./js/script.js"></script>
 <script>
     AOS.init();
 </script>
-<script></script>
-<script src="script.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var url = $("#cartoonVideo").attr('src');
+        $("#myModal").on('hide.bs.modal', function(){
+            $("#cartoonVideo").attr('src', '');
+        });
+        $("#myModal").on('show.bs.modal', function(){
+            $("#cartoonVideo").attr('src', url);
+        });
+    });
+</script>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9" id="yt-player">
+                    <iframe id="cartoonVideo" src="https://www.youtube.com/embed/GyxkMvb3PXQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

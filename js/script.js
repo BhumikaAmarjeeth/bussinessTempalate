@@ -9,6 +9,11 @@ $(function () {
         }
     });
 });
+// Hamburgur menu
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 10) {
@@ -19,23 +24,23 @@ $(function () {
     }
   })
 });
-// Hamburgur menu
-function myFunction(x) {
-  x.classList.toggle("change");
-}
 
 //clients
 
 
 $('.owl-carousel').owlCarousel({
-  loop: true,
-autoplay:true,
-autoplayTimeout:5000,
-  margin: 10,
-  nav: true,
-  navText: [
-    '<i class="fa fa-angle-left roundBorder mr-4"></i>','<i class="fa fa-angle-right roundBorder ml-4"></i>'
-  ],
+  margin:10,
+  loop:true,
+  rewind:true,
+  autoWidth:false,
+  items:1,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  nav: false,
+  // navText: [
+  //   '<i class="fa fa-angle-left roundBorder mr-4"></i>','<i class="fa fa-angle-right roundBorder ml-4"></i>'
+  // ],
   autoplay: true,
   autoplayHoverPause: true,
   responsive: {
@@ -46,10 +51,10 @@ autoplayTimeout:5000,
       items: 3
     },
     1000: {
-      items: 5
+      items: 8
     }
   }
-})
+});
 
 var $animation_elements = $('.animation-element');
 var $window = $(window);
@@ -148,3 +153,10 @@ $('.slider__next, .go-to-next').on('click', function(){
   }
   goToSlide(currentSlide);
 });
+
+
+
+//model video play
+// $('#myModal').on('hidden.bs.modal', function () {
+//   callPlayer('yt-player', 'stopVideo');
+// });
