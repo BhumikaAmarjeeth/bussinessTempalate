@@ -101,12 +101,14 @@ input, textarea, select, input, button {
     border-radius: 0px;
     padding: 10px 30px !important;
     z-index: 9999;
+    transition: .3s;
+    font-size: 15px;
 }
 
 .btn-theme:hover {
     color: #5360d6;
     background: #fff;
-    border: 2px solid #5360d6;
+    /*border: 2px solid #5360d6;*/
     padding: 10px;
 }
 
@@ -129,14 +131,23 @@ input, textarea, select, input, button {
 .pb-10 {
     padding-bottom: 50px;
 }
+.pb-010 {
+    padding-bottom: 10px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
 
 .pt-10 {
     padding-top: 50px;
 }
 
+
 .aboout-heaading {
     font-size: 40px;
     line-height: 1.28;
+    font-weight: 700;
 }
 
 .voilet {
@@ -164,7 +175,7 @@ input, textarea, select, input, button {
 }
 
 .yellowDark {
-    color: #F79A0D
+    color: #ffc107;
 }
 
 .darkVoilet {
@@ -174,7 +185,11 @@ input, textarea, select, input, button {
 .navbar .nav-link {
     color: #fff;
     font-family: "CerebriSans";
-    font-size: 13px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 @media (min-width: 1199px) {
@@ -212,8 +227,9 @@ input, textarea, select, input, button {
 
 .navbar.active .nav-link {
     color: #555;
+    letter-spacing: 0.5px;
     font-family: "CerebriSans";
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .navbar.active .nav-link:hover,
@@ -348,8 +364,13 @@ body {
 .onHover:hover {
     background-color: #FFFFFF;
     box-shadow: 0px 3px 25px #00000029;
+    -webkit-transition: box-shadow .6s ease-in;
+    transform: translateY(-10px);
 }
 
+.onHover{
+    transition: .4s!important;
+}
 /*BLog */
 
 .card-color {
@@ -361,12 +382,14 @@ body {
 }
 
 .card:hover {
-    background: transparent linear-gradient(191deg, #5360D6 0%, #9a5aff 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(191deg, #5360D6 0%, #3b46a9 100%) 0% 0% no-repeat padding-box;
     opacity: 0.93;
 }
 
 .card:hover .onHoverYellow {
     color: #F79A0D;
+    box-shadow: 0px 50px 60px rgba(32,33,36,0.28) !important;
+    -webkit-transition: box-shadow .6s ease-in;
 }
 
 .card:hover .onHoverWhite {
@@ -465,7 +488,7 @@ input[type=email] {
 }
 
 .item:hover .overlay {
-    background: transparent linear-gradient(60deg, #5360d6 0%, #9a5aff 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(60deg, #5360d6 0%, #5a5ad6 60%, #9a5aff 100%) 0% 0% no-repeat padding-box;
     opacity: 0.88;
 
 }
@@ -479,8 +502,8 @@ input[type=email] {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+    transition: .5s ease-in;
+    background-color: #5360d6;
 }
 
 .name {
@@ -624,11 +647,11 @@ footer {
 
 #myBtn:hover {
     cursor: pointer;
-    background-color: #9a5aff;
+    background-color: #ffc107;
 }
 
 #myBtn:active {
-    background-color: #9a5aff;
+    background-color: #ffc107;
 }
 
 #myBtn.show {
@@ -663,6 +686,7 @@ footer {
 
 .icon-so ul {
     list-style: none;
+    margin-left: -45px;
 }
 
 .icon-so ul > li {
@@ -758,7 +782,7 @@ footer {
 
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
-    transform: scale(1.1) !important;
+    transform: scale(1.02) !important;
 }
 
 .card:hover .cta span {
@@ -945,7 +969,7 @@ footer {
     height: 100%;
     background-size: auto 100%;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-transition: -webkit-filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: -webkit-filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -960,7 +984,7 @@ footer {
     left: 0%;
     background-size: auto 133.3333%;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-transform: scale(0.75);
     transform: scale(0.75);
     -webkit-transition: box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end, -webkit-transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -1196,6 +1220,7 @@ footer {
 
 .slider__slide:nth-child(1) .slider__back, .slider__slide:nth-child(1) .slider__inner {
     background-image: url(../images/photo-of-woman-wearing-eyeglasses-3184405.jpg);
+    background-size:cover;
 }
 
 .slider__slide:nth-child(2) .slider__back, .slider__slide:nth-child(2) .slider__inner {
@@ -1226,7 +1251,7 @@ footer {
 }
 .about-span{
     color: #ffc107;
-    font-style: italic;
+    /*font-style: italic;*/
     font-weight: 900;
     letter-spacing: 2px
 }
@@ -1293,7 +1318,12 @@ margin-right: 0px !important;
         padding: 0px !important;
         margin: 0px !important;
     }
-
+    .btn-play {
+        position: absolute;
+        margin: 0 auto;
+        margin: 1% 0px 0px 35% !important;
+        width: 100px !important;
+    }
     body{
         overflow-x: hidden;
     }
@@ -1302,3 +1332,130 @@ margin-right: 0px !important;
     /*}*/
 }
 
+
+.sub-p{
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.heading1{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: Poppins , sans-serif;
+}
+.mb-100{
+    margin-bottom: 100px !important;
+}
+.mt-2{
+    font-size: 30px;
+    font-family: Poppins , sans-serif;
+}
+.mt-20{
+    margin-top:20px;
+}
+.mt-30{
+    margin-top:30px !important;
+}
+.mt-100{
+    margin-top: 100px !important;
+}
+
+.middle-white{
+  color:  #dadadd;
+}
+
+.f-c ul li a:hover{
+    color:#ffc107!important;
+}
+
+.f-link{
+    color: #ffc107 !important;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+.f-link:hover, .f-link:active{
+    color:#fff !important;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+}
+.btn-play{
+    position: absolute;
+    margin: 0 auto;
+    margin: 10% 0px 0px 30%;
+}
+
+.modal-content iframe{
+    margin: 0 auto;
+    display: block;
+}
+.modal-content {
+    background-color: transparent !important;
+    border: none !important;
+}
+.circle {
+    stroke: #f8aa28;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    -webkit-transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+}
+
+.playBut {
+    /*  border: 1px solid red;*/
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+}
+.playBut .triangle {
+    -webkit-transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: #fff;
+    transform: translateY(0);
+}
+.playBut:hover .triangle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: #f8aa28;
+    animation: nudge 0.7s ease-in-out;
+}
+@keyframes nudge {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    70% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.playBut:hover .circle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+}
+.close {
+    float: right;
+    font-size: 40px !important;
+    font-weight: 700;
+    line-height: 1;
+    color: #373636 !important;
+ text-shadow:none !important;
+    opacity: .5;
+}
+.modal-backdrop
+{
+    opacity:0.9 !important;
+}
+.modal-header{
+    border: none !important;
+}
+
+.lightbox i {
+    color: #fff !important;
+    font-size: 30px;
+}

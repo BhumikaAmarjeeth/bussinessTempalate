@@ -160,3 +160,11 @@ $('.slider__next, .go-to-next').on('click', function(){
 // $('#myModal').on('hidden.bs.modal', function () {
 //   callPlayer('yt-player', 'stopVideo');
 // });
+$('#myModalPrev').on('show.bs.modal', function (e) {
+  var idVideo = $(e.relatedTarget).data('id');
+  $('#myModalPrev .modal-body').html('<iframe width="100%" height="400px" src="https://www.youtube.com/embed/' + idVideo + '?autoplay=true" frameborder="0" allowfullscreen></iframe>');
+});
+//on close remove
+$('#myModalPrev').on('hidden.bs.modal', function () {
+  $('#myModalPrev .modal-body').empty();
+});

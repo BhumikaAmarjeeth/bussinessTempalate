@@ -22,15 +22,20 @@
 
     <!--Roboto Font-->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<!-- Animator CSS -->
+
+    <!-- Fancy  Box-->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" media="screen">
+
+
+    <!-- Animator CSS -->
     <link  rel="stylesheet"  href="./css/animate.css"    />
     <link rel="stylesheet" href="./css/styles.css">
 
     <style>
-        .modal-content iframe{
-            margin: 0 auto;
-            display: block;
-        }
+
+
     </style>
 </head>
 <body>
@@ -95,54 +100,33 @@
         </div>
         <div class="slider__indicators"></div>
     </div>
-<!--    </div><a class="sig" href="https://fulgid.in" target="_blank">fulgid</a>-->
-<!--    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
-<!--        <ol class="carousel-indicators">-->
-<!--            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-<!--            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-<!--            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-<!--        </ol>-->
-<!--        <div class="carousel-inner" role="listbox">-->
-<!--            &lt;!&ndash; Slide One - Set the background image for this slide in the line below &ndash;&gt;-->
-<!--            <div class="carousel-item active"-->
-<!--                 style="background-image: url(./images/photo-of-woman-wearing-eyeglasses-3184405.jpg); background-size: cover">-->
-<!--                <div class="carousel-caption d-none d-md-block">-->
-<!--                    <h2 class="display-4">First Slide</h2>-->
 
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Slide Two - Set the background image for this slide in the line below &ndash;&gt;-->
-<!--            <div class="carousel-item"-->
-<!--                 style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080'); background-size: cover">-->
-<!--                <div class="carousel-caption d-none d-md-block">-->
-<!--                    <h2 class="display-4">Second Slide</h2>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Slide Three - Set the background image for this slide in the line below &ndash;&gt;-->
-<!--            <div class="carousel-item"-->
-<!--                 style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080'); background-size: cover">-->
-<!--                <div class="carousel-caption d-none d-md-block">-->
-<!--                    <h2 class="display-4">Third Slide</h2>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 </header>
 
 
-<section class="container about mt-5 pt-5" id="about">
+<section class="container about mt-5 mb-100 mt-100 pt-5" id="about">
     <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 image-section" data-aos="fade-up">
             <div class="videos">
-                <a href="#" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal" id="url" class="video video-btn">
-                    <span></span>
+                <a href="#" data-id="GyxkMvb3PXQ" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModalPrev" class="video video-btn playBut">
+                <svg version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                         x="0px" y="0px" width="213.7px" height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
+                         xml:space="preserve" class="btn-play">
+
+<polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	73.5,62.5 148.5,105.8 73.5,149.1 "/>
+
+                        <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
+</svg>
                     <img src="./images/group-of-person-sitting-indoors-3184306.jpg" class="w-100 h-auto" alt="My Awesome Video" />
                 </a>
             </div>
 
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutDesc m-auto p-20" data-aos="fade-left">
-            <h2 class="aboout-heaading voilet pb-10">A agency specialized in <span class="about-span">brand strategy</span> and digital creation.</h2>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutDesc m-auto p-20 " data-aos="fade-left">
+            <p class="text-uppercase sub-p pb-010">About US</p>
+            <h2 class="aboout-heaading voilet pb-30">A agency specialized in <span class="about-span">brand strategy</span> and digital creation.</h2>
             <p class="greyColor aboutDesc">We combine classic brand strategy and account planning to find a brand’s true
                 capability. Then we turn this capability into exceptional content, products, services and campaigns.</p>
         </div>
@@ -150,8 +134,12 @@
 </section>
 
 
-<section class="services mt-5 pt-5 pb-5" id="services">
+<section class="services mt-5 pt-10 pb-5 " id="services">
     <div class="container text-center">
+        <div class="mb-100 mt-20">
+            <h5 class="voilet text-center sub-p">Features</h5>
+            <h2 class="text-center mt-30 heading1">Our Services</h2>
+        </div>
         <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 onHover pb-10 pt-10">
                 <img src="images/tool.png" class="w-15 h-auto"/>
@@ -197,11 +185,13 @@
 </section>
 
 <section class=" blog mt-5 pt-5" id="blog">
-    <h5 class="voilet text-center">RANDOM STUFF</h5>
-    <h2 class="text-center">From our blog</h2>
+    <div class="mb-100 mt-20">
+    <h5 class="voilet text-center sub-p">RANDOM STUFF</h5>
+    <h2 class="text-center mt-20 heading1">From our blog</h2>
+    </div>
     <div class="col-md-12 d-flex mt-5 pb-10 ">
         <div class="row card-group justify-content-center mx-auto animation-element bounce-up">
-            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+           <div class="col-lg-3"> <div class="card card-color  mx-2 img-hover-zoom">
                 <div class=""><img class="card-img-top" src="./images/blog/1.jpg" alt="Card image cap"></div>
                 <div class="card-body">
                     <h6 class="voilet onHoverYellow">BUSINESS</h6>
@@ -218,8 +208,8 @@
                     </a>
                     </div>
                 </div>
-            </div>
-            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+            </div></div>
+            <div class="col-lg-3"><div class="card card-color  mx-2 img-hover-zoom">
                 <div class=""><img class="card-img-top" src="./images/blog/2.jpg" alt="Card image cap"></div>
                 <div class="card-body">
                     <h6 class="voilet onHoverYellow">LIFE STYLE</h6>
@@ -236,8 +226,8 @@
                     </a>
                     </div>
                 </div>
-            </div>
-            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+            </div></div>
+                <div class="col-lg-3"> <div class="card card-color mx-2 img-hover-zoom">
                 <div class=""><img class="card-img-top" src="./images/blog/3.jpg" alt="Card image cap"></div>
                 <div class="card-body">
                     <h6 class="voilet onHoverYellow">TRAVEL</h6>
@@ -254,8 +244,8 @@
                     </a>
                     </div>
                 </div>
-            </div>
-            <div class="card card-color col-lg-3 mx-2 img-hover-zoom">
+            </div></div>
+                    <div class="col-lg-3"> <div class="card card-color mx-2 img-hover-zoom">
                 <div class=""><img class="card-img-top" src="./images/blog/4.jpg" alt="Card image cap"></div>
                 <div class="card-body">
                     <h6 class="voilet onHoverYellow">LIFE STYLE</h6>
@@ -272,146 +262,174 @@
                     </a>
                     </div>
                 </div>
-            </div>
+            </div></div>
         </div>
 
     </div>
-<!--    <div class="text-center">-->
-<!--        <a href="#" class="btn btn-theme ">Load more..</a>-->
-<!--    </div>-->
+
 </section>
 
 <section class="question darkVoilet mt-5 pb-10 pt-10">
 
     <div class="container">
         <div class="row">
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
                 <h2 class="yellowDark mt-2 ">Let’s create something extraordinary together.
                 </h2>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 emailHere">
-<!--                <input type="email" id="emails" name="emails" multiple class="m-auto" placeholder="Email here...">-->
-                <a href="#" class="btn btn-theme ">Join Us Now</a>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 emailHere">
+              <div class="text-center">  <a href="#" class="btn btn-theme ">Join Us Now</a></div>
             </div>
         </div>
     </div>
 </section>
 
 <section class="container portfolio mt-5 pt-5" data-aos="flip-up" id="portfolio">
-    <h6 class="voilet text-center"> RECENT WORKS</h6>
-    <h2 class="text-center">Our Portfolios</h2>
 
+    <div class="mb-100 mt-20">
+        <h6 class="voilet text-center sub-p">RECENT WORKS</h6>
+        <h2 class="text-center heading1 mt-20">Our Portfolios</h2>
+    </div>
     <div class="masonry mt-5">
-        <div class="item">
+        <div class="item thumb">
+            <img src="images/01.jpg" class="image rounded img-fluid"  />
+            <div class="overlay text-center">
+                <h6 class="yellowDark name">PORTFOLIO TITLE1</h6>
+                <p class="text-white">Illustrator</p>
+                <a href="./images/01.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
 
-            <img src="images/01.jpg" class="image">
+        <div class="item">
+            <img src="images/02.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/02.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
-            <img src="images/02%20(1).jpg" class="image">
-            <div class="overlay text-center">
-                <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
-                <p class="text-white">Illustrator</p>
-            </div>
-        </div>
-        <div class="item">
-
             <img src="images/03.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/03.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/04.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/04.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/05.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/05.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/06.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/06.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/07.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/07.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/08.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/08.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/09.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/09.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/11.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/11.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/12.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/12.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/12.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/12.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/12.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/12.jpg" data-toggle="lightbox"  class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
         <div class="item">
-
             <img src="images/12.jpg" class="image">
             <div class="overlay text-center">
                 <h6 class="yellowDark name">PORTFOLIO TITLE</h6>
                 <p class="text-white">Illustrator</p>
+                <a href="./images/12.jpg" data-toggle="lightbox" class="lightbox" data-gallery="gallery" >
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
         </div>
 
@@ -425,16 +443,9 @@
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 form-content mt-5 pt-5 mb-5 px-5">
                 <h5 class="voilet">unique digital experiences</h5>
-                <h2 class="mt-3 head-v">Fill out the form and we’ll be in <i class="voilet">touch soon!</i></h2>
+                <h2 class="mt-3 head-v mt-30">Fill out the form and we’ll be in <i class="voilet">touch soon!</i></h2>
                 <p class="lightFont mt-5 mb-5">Pri id perfecto reformidans ullam corper, nobis bonorum appetere ex usut per doming pros</p>
-                <!--                <div class="social-media">-->
-                <!--                   <a href="#" class="social-icon"> <img src="images/behance.png" class="" width="34" height="34"></a>-->
-                <!--                    <a href="#" class="social-icon">  <img src="images/facebook.png" width="34" height="34"></a>-->
-                <!--                        <a href="#" class="social-icon"> <img src="images/instagram.png" width="34" height="34"></a>-->
-                <!--                            <a href="#" class="social-icon">  <img src="images/linkedin.png" width="34" height="34"></a>-->
-                <!--                                <a href="#" class="social-icon"> <img src="images/twitter.png" width="34" height="34"></a>-->
-                <!--                </div>-->
-                <div class="icon-so social-media">
+                               <div class="icon-so social-media">
                     <ul class="icon-effect icon-effect-1a">
                         <li><a href="#" class="icon"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" class="icon"><i class="fa fa-twitter"></i></a></li>
@@ -475,9 +486,7 @@
                         <span>k</span>
                         <span>s</span>
                     </button>
-
-<!--                    <button type="button" class="btn w-100 bg-voilet ">Send</button>-->
-                </form>
+               </form>
                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                 <div class="clearfix"></div>
             </div>
@@ -489,59 +498,39 @@
 <section class="partners mt-5">
     <div class="mb-5">
         <div class="owl-carousel">
-            <div class="brand"><img src="images/brand_01.png"></div>
-            <div class="brand"><img src="images/brand_02.png"></div>
-            <div class="brand"><img src="images/brand_03.png"></div>
-            <div class="brand"><img src="images/brand_04.png"></div>
-            <div class="brand"><img src="images/brand_05.png"></div>
-            <div class="brand"><img src="images/brand_06.png"></div>
-            <div class="brand"><img src="images/brand_02.png"></div>
-            <div class="brand"><img src="images/brand_03.png"></div>
-            <div class="brand"><img src="images/brand_02.png"></div>
-            <div class="brand"><img src="images/brand_03.png"></div>
+            <div class="brand"><img src="images/brand_01.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_02.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_03.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_04.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_05.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_06.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_02.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_03.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_02.png" alt="" /></div>
+            <div class="brand"><img src="images/brand_03.png" alt="" /></div>
 
-
-        </div>
+       </div>
     </div>
-
-
 </section>
-<!-- Page Content -->
-<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--    <div class="modal-dialog" role="document">-->
-<!--        <div class="modal-content">-->
-<!--            <div class="modal-body" >-->
-<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                    <span aria-hidden="true">&times;</span>-->
-<!--                </button>-->
-<!--               -->
-<!--                <div class="embed-responsive embed-responsive-16by9" id="yt-player">-->
-<!--                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GyxkMvb3PXQ?rel=0&enablejsapi=1" allowfullscreen="" allow="autoplay"></iframe>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
 
 <footer>
     <div class="container pt-4 pb-4 ">
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                <div id="footer-menu-content" class="">
+                <div id="footer-menu-content" class="f-c">
                     <ul class="d-flex list-inline my-auto justify-content-center">
-                        <li class="nav-item"><a href="#blog" class="nav-link text-uppercase lightFont">Blog</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase lightFont">Latest
+                        <li class="nav-item"><a href="#blog" class="nav-link text-uppercase middle-white">Blog</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link text-uppercase middle-white">Latest
                             Projects</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link text-uppercase lightFont">Contact Me</a>
+                        <li class="nav-item"><a href="#contact" class="nav-link text-uppercase middle-white">Contact Me</a>
                         </li>
                     </ul>
                 </div>
 
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex">
-                <p class="lightFont align-self-center text-center mx-auto my-auto"> &copy; Akon Studio 2020. Made with
-                    ♥ by fulgid</p>
+                <p class="middle-white align-self-center text-center mx-auto my-auto"> &copy; Akon Studio 2020. Made with
+                    ♥ by <a href="https://www.fulgid.in/" target="_blank" class="f-link">fulgid</a></p>
             </div>
             <!--        <div class="to-top" id="toTop">-->
             <button id="myBtn" class="myBtn d-sm-none d-md-block" title="Go to top"></button>
@@ -550,13 +539,28 @@
 
     </div>
 </footer>
+<div class="modal fade" id="myModalPrev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close " data-dismiss="modal" aria-hidden="true"><i class="fa fa-times pull-right " aria-hidden="true" title="close"></i>
+                </button>
+                            </div>
+                       <div class="modal-body" class="embed-responsive embed-responsive-16by9" id="yt-player">
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"  crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript" src="./js/validator.min.js"></script>
@@ -565,28 +569,14 @@
 <script>
     AOS.init();
 </script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        var url = $("#cartoonVideo").attr('src');
-        $("#myModal").on('hide.bs.modal', function(){
-            $("#cartoonVideo").attr('src', '');
-        });
-        $("#myModal").on('show.bs.modal', function(){
-            $("#cartoonVideo").attr('src', url);
-        });
-    });
-</script>
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <div class="modal-body">
-                <div class="embed-responsive embed-responsive-16by9" id="yt-player">
-                    <iframe id="cartoonVideo" src="https://www.youtube.com/embed/GyxkMvb3PXQ" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" type="text/javascript"></script>
+<script>
+    $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});</script>
+
+
 </body>
 </html>
