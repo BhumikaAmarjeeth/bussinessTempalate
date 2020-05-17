@@ -1,4 +1,12 @@
-
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* Author : Bhumika
+* Company : Fulgid Software Solutions Pvt Ltd
+* ==========================================
+*
+*/
 
 $(function () {
     $(window).on('scroll', function () {
@@ -25,23 +33,14 @@ $(function () {
   })
 });
 
+
 //clients
-
-
 $('.owl-carousel').owlCarousel({
-  margin:10,
   loop:true,
-  rewind:true,
-  autoWidth:false,
-  items:1,
+  items:5,
+  margin:50,
   autoplay:true,
   autoplayTimeout:1000,
-  autoplayHoverPause:true,
-  nav: false,
-  // navText: [
-  //   '<i class="fa fa-angle-left roundBorder mr-4"></i>','<i class="fa fa-angle-right roundBorder ml-4"></i>'
-  // ],
-  autoplay: true,
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -51,11 +50,12 @@ $('.owl-carousel').owlCarousel({
       items: 3
     },
     1000: {
-      items: 8
+      items: 5
     }
   }
 });
 
+//animation fade
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 
@@ -86,7 +86,6 @@ $window.trigger('scroll');
 
 //Go to top button
 var btn = $('#myBtn');
-
 $(window).scroll(function() {
   if ($(window).scrollTop() > 300) {
     btn.addClass('show');
@@ -94,7 +93,6 @@ $(window).scroll(function() {
     btn.removeClass('show');
   }
 });
-
 btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
@@ -102,25 +100,20 @@ btn.on('click', function(e) {
 
 
 //smooth scroll for menu link
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
+  $(".a1").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -128,7 +121,8 @@ $(document).ready(function(){
   });
 });
 
-//script fro slider
+
+//script for slider
 
 $(document).ready(function(){
   for (var i=1; i <= $('.slider__slide').length; i++){
@@ -167,4 +161,10 @@ $('#myModalPrev').on('show.bs.modal', function (e) {
 //on close remove
 $('#myModalPrev').on('hidden.bs.modal', function () {
   $('#myModalPrev .modal-body').empty();
+});
+
+//lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
 });
