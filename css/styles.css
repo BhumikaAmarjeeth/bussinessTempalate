@@ -362,7 +362,7 @@ body {
 }
 
 .onHover:hover {
-    background-color: #FFFFFF;
+    background-color: #ffc107;
     box-shadow: 0px 3px 25px #00000029;
     -webkit-transition: box-shadow .6s ease-in;
     transform: translateY(-10px);
@@ -1577,4 +1577,28 @@ hr.line.bw-2 {
 }
 .partners{
     background: #f0f8ff !important;
+}
+.onHover:hover .icon-h{
+    transform: translateY(-10px);
+}
+.icon-h{
+    transition: ease-in-out 0.3s !important;
+}
+
+
+.onHover:hover .icon1 {
+    filter:
+            invert(0.5)
+            sepia(1)
+            hue-rotate(0deg)
+            saturate(4)
+            brightness(1);
+}
+
+.onHover:hover .heading{
+    color:#fff !important;
+}
+
+.onHover:hover p {
+    color:#fff !important;
 }
