@@ -168,3 +168,15 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox();
 });
+
+//off canva menu
+function openNav() {
+  document.getElementById("mySidenav").style.width = "500px";
+  document.getElementById("all").style.marginRight = "250px";
+
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("all").style.marginRight= "0";
+}
