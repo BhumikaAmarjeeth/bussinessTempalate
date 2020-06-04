@@ -1774,3 +1774,14 @@ hr.line.bw-2 {
     top: 10px;
     background-color: #f8aa28;
 }
+
+
+.active1 a{
+
+    color: #5360d6 !important;
+    -webkit-transition: .9s all ease-out;
+    -moz-transition: .9s all ease-out;
+    /*transition: .9s all ease-out;*/
+    transition: width 2s ease-out;
+    opacity: 1;
+}
