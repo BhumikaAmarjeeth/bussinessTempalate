@@ -1658,7 +1658,7 @@ hr.line.bw-2 {
     top: 0;
     right: 0;
     background-color: #fff;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
